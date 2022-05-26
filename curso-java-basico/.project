@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>aprendendo-com-eclipse</name>
+	<name>curso-java-basico</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1653524867023</id>
+			<id>1653524867090</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
