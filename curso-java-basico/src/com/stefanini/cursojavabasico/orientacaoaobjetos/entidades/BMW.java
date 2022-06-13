@@ -1,4 +1,8 @@
-package com.stefanini.cursojavabasico.orientacaoaobjetos;
+package com.stefanini.cursojavabasico.orientacaoaobjetos.entidades;
+
+import com.stefanini.cursojavabasico.orientacaoaobjetos.Carro;
+import com.stefanini.cursojavabasico.orientacaoaobjetos.Conversivel;
+import com.stefanini.cursojavabasico.orientacaoaobjetos.Utilitario;
 
 public class BMW extends Carro implements Conversivel, Utilitario {
 

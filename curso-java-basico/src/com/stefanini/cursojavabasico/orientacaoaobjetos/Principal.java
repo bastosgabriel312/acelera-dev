@@ -1,8 +1,16 @@
 package com.stefanini.cursojavabasico.orientacaoaobjetos;
 
-public class Principal {
+import com.stefanini.cursojavabasico.orientacaoaobjetos.entidades.BMW;
+import com.stefanini.cursojavabasico.orientacaoaobjetos.entidades.Tesla;
 
+public class Principal {
+	static int valor = 10;
+	static void print() {
+		System.out.println(valor);
+	}
 	public static void main(String[] args) {
+		print();
+		
 //		Carro bmw = new Carro();
 //		bmw.setMarca("BMW");
 //		bmw.setModelo("M3");
@@ -29,14 +37,22 @@ public class Principal {
 		((Tesla) tesla2).setDirigeSozinho(true);
 		System.out.println(((Tesla) tesla2).isDirigeSozinho());
 
-//		Carro[] carros = new Carro[] { bmw, bmw2, tesla, tesla2 };
-//
-//		for (Carro carro : carros) {
-//			if (carro instanceof Tesla) {
-//				System.out.println(((Tesla) carro).isDirigeSozinho());
-//			}
-//		}
+		Carro[] carros = new Carro[] { bmw2, tesla, tesla2 };
 
+		for (Carro carro : carros) {
+			if (Constantes.MARCA_FAMOSA.equals(carro.getMarca())) {
+				System.out.println("Carro de marca famosa");
+			}
+			if (carro instanceof Tesla) {
+				System.out.println(((Tesla) carro).isDirigeSozinho());
+			}
+		}
+		
+		Calcular.soma(1,1);
+		
+
+//		Constantes.MARCA_FAMOSA = "Porshe";
+		
 		System.out.println(bmw2.calcularTaxaAceleracao(50, 2));
 		System.out.println(tesla.calcularTaxaAceleracao(50, 2));
 //		bmw3.acelerar();
