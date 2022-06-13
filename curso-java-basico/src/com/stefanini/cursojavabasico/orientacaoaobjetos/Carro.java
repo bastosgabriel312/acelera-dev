@@ -1,6 +1,6 @@
 package com.stefanini.cursojavabasico.orientacaoaobjetos;
 
-public class Carro {
+public abstract class Carro {
 
 	private String marca;
 	private String modelo;
@@ -35,6 +35,8 @@ public class Carro {
 		System.out.println("Freiando...");
 
 	}
+	
+	public abstract void piscarAlerta();
 
 	public double calcularTaxaAceleracao(double velocidadeFinal, double velocidadeInicial, double tempoFinal,
 			double tempoInicial) {

@@ -21,6 +21,13 @@ public class Tesla extends Carro {
 	public String calcularTaxaAceleracao(int velocidadeFinal, int tempoFinal) {
 		return ""+ velocidadeFinal * tempoFinal;
 	}
+	
+	@Override
+	public void piscarAlerta() {
+		System.out.println("Tesla Piscando alerta...");
+		
+	}
+
 
 	
 }
